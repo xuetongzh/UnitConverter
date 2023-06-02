@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/unit_type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:prompt="@string/select_unit_type" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/source_unit_spinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:prompt="@string/select_source_unit" />
+
+        <Spinner
+            android:id="@+id/target_unit_spinner"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:prompt="@string/select_target_unit" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_value_to_convert"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert" />
+
+    <TextView
+        android:id="@+id/conversion_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

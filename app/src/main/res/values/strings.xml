@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UnitConverter</string>
+    <string name="select_unit_type">Select unit type</string>
+    <string name="select_source_unit">Select source unit</string>
+    <string name="select_target_unit">Select target unit</string>
+    <string name="enter_value_to_convert">Enter the value to convert</string>
+    <string name="convert">Convert</string>
+</resources>
